@@ -17,7 +17,7 @@ See the **XL Deploy Reference Manual** for background information on XL Deploy a
 
 [xld-pega-plugin-travis-image]: https://travis-ci.org/xebialabs-community/xld-pega-plugin.svg?branch=master
 [xld-pega-plugin-travis-url]: https://travis-ci.org/xebialabs-community/xld-pega-plugin
-[xld-pega-plugin-codacy-image]: https://api.codacy.com/project/badge/Grade/2f33e2ec4d3444949e37eaf2385c1cde
+[xld-pega-plugin-codacy-image]: https://api.codacy.com/project/badge/Grade/4d86a381136c43ad8c87bfb1a267bd62
 [xld-pega-plugin-codacy-url]: https://www.codacy.com/app/joris-dewinne/xld-pega-plugin
 [xld-pega-plugin-code-climate-image]: https://codeclimate.com/github/xebialabs-community/xld-pega-plugin/badges/gpa.svg
 [xld-pega-plugin-code-climate-url]: https://codeclimate.com/github/xebialabs-community/xld-pega-plugin
