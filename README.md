@@ -54,7 +54,7 @@ Please read the **XL Deploy Reference Manual** first if you're unfamiliar with X
 ## Example of output when preparing a deploy
 ![Preview](images/prepare_deploy.png)
  
-## Example of output when doing a deployment, this one failed
+## Example of output when doing a deployment
 ![Preview](images/deployment_executed.png)
 
 # Future work #
