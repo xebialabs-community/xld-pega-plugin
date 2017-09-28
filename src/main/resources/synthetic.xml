@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.xebialabs.com/deployit/synthetic"
+           xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
+
+    <type type="pega.InstalledPackage" extends="udm.BaseDeployedArtifact" deployable-type="pega.Package"
+          container-type="pega.Server">
+        <generate-deployable type="pega.Package" extends="udm.BaseDeployableArchiveArtifact"/>
+
+        <property name="templateClasspathResources" kind="set_of_string" hidden="true"
+                  default="bns/pega/prpcUtils.properties"/>
+
+        <property name="databaseUsername" required="false" description="Overrides username on the container"/>
+        <property name="databasePassword" password="true" required="false"
+                  description="Overrides password on the container"/>
+    </type>
+
+    <type type="pega.Server" extends="udm.BaseContainer">
+        <property name="host" kind="ci" referenced-type="overthere.Host" as-containment="true"
+                  description="The host where Pega is running."/>
+        <property name="pegaHome" default="/opt/PEGA"/>
+        <property name="javaHome" default="/etc/alternatives/java_sdk"/>
+        <property name="userTempDir" default="/apps/deploy/Pega72/tmp"/>
+
+        <!-- database settings -->
+        <property name="databaseDriverJarPath" default="/opt/PEGA/jdbc/ojdbc7.jar" description="path to jdbc jar"/>
+        <property name="databaseDriverClass" default="com.oracle.OracleDriver"/>
+        <property name="databaseJdbcUrl"/>
+        <property name="databaseType" description="valid values are: mssql, oracledate, udb, db2zos, postgres"/>
+        <property name="rulesSchemaName" default="rules"/>
+        <property name="dataSchemaName" default="data"/>
+        <property name="databaseUsername" description="Username to connect to the database"/>
+        <property name="databasePassword" password="true" description="Password to connect to the database"/>
+    </type>
+
+</synthetic>
