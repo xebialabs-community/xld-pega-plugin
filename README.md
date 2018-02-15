@@ -36,6 +36,7 @@ See vendor documentation for details on the export / import jobs.
 
 * **Requirements**
 	* **XL Deploy** 5.5.0+
+	* [PEGA 7.2.X, PEGA 7.1.X, PRPC 6.3.X, PRPC 6.2.X, PRPC 6.1.X](https://pdn.pega.com/how-import-or-export-archive-command-line)
 
 # Installation #
 
